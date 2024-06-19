@@ -5,4 +5,5 @@
 4. Start session pada Appium server dengan ketentuan Capability Set (ketentuan ada pada file capabilityset.py)
 5. Run file yang berisikan code testing
 
-# <a href='https://docs.google.com/spreadsheets/d/1y12QS2Su1hSTbIfNAeKK3gJS2vuS4trKpn45QwVNRGU/edit?usp=sharing'>UAS_PPKPL_AutomationTesting</a>
+# Dokumentasi Test-Case (Wattpad Automation Testing)
+<a href='https://docs.google.com/spreadsheets/d/1y12QS2Su1hSTbIfNAeKK3gJS2vuS4trKpn45QwVNRGU/edit?usp=sharing'>UAS_PPKPL_AutomationTesting</a>
