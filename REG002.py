@@ -37,11 +37,3 @@ time.sleep(10)
 
 driver.find_element(by=AppiumBy.XPATH, value="//android.widget.TextView["
                                              "@resource-id='wp.wattpad:id/field_content_show']").click()
-# driver.implicitly_wait(10)
-
-# driver.find_element(by=AppiumBy.XPATH, value="//android.widget.TextView["
-#                                              "@resource-id='wp.wattpad:id/authentication_view_dob_field']").click()
-# driver.find_element(by=AppiumBy.XPATH, value="//android.widget.EditText[@text='May']").click()
-# driver.find_element(by=AppiumBy.XPATH, value="//android.widget.EditText[@text='12']").click()
-# driver.find_element(by=AppiumBy.XPATH, value="//android.widget.EditText[@text='2000']").click()
-# driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="SET").click()
