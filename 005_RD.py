@@ -19,7 +19,7 @@ cap: Dict[str, Any] = {
 url = 'http://localhost:4723'
 
 driver = webdriver.Remote(url, options=AppiumOptions().load_capabilities(cap))
-driver.implicitly_wait(15)
+driver.implicitly_wait(10)
 
 driver.find_element(by=AppiumBy.XPATH, value="//android.widget.TextView[@resource-id='wp.wattpad:id/log_in_button']").click()
 
@@ -27,20 +27,13 @@ driver.find_element(by=AppiumBy.XPATH, value="//android.widget.EditText["
                                              "@resource-id='wp.wattpad:id/validate_content_field' and "
                                              "@text='Username']").send_keys(
                                              "CldsUASPKPL")
-time.sleep(2)
-
 driver.find_element(by=AppiumBy.XPATH, value="//android.widget.EditText["
                                              "@resource-id='wp.wattpad:id/validate_content_field' and "
                                              "@text='Password']").send_keys(
                                              "WpUAS1234#")
-time.sleep(2)
-
-driver.find_element(by=AppiumBy.XPATH, value="//android.widget.TextView["
-                                             "@resource-id='wp.wattpad:id/field_content_show']").click()
-time.sleep(5)
-
-driver.find_element(by=AppiumBy.XPATH, value="//android.widget.TextView["
-                                             "@resource-id='wp.wattpad:id/field_content_show']").click()
-
 driver.find_element(by=AppiumBy.XPATH, value="//android.widget.TextView["
                                              "@resource-id='wp.wattpad:id/authentication_view_native_auth_button']").click()
+
+driver.find_element(by=AppiumBy.XPATH, value="(//androidx.compose.ui.platform.ComposeView["
+                                             "@resource-id='wp.wattpad:id/home_section_story_expanded_item_cover'])["
+                                             "1]").click()

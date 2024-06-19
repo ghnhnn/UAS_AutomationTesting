@@ -11,6 +11,7 @@ cap: Dict[str, Any] = {
     'deviceName': 'Android',
     'appPackage': 'wp.wattpad',
     'appActivity': 'wp.wattpad.ui.activities.LoginActivity',
+    'noReset': True,
     'language': 'en',
     'locale': 'US'
 }
